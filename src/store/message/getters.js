@@ -1,5 +1,5 @@
 const getText = (state) => state.text;
-const getDescription = (state) => state.desctription;
+const getDescription = (state) => state.description;
 
 module.exports = {
   getText,

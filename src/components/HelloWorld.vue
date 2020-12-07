@@ -1,14 +1,35 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ getMessage.text }}</h1>
+    <h1>{{ getMessage.description }}</h1>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String,
+  data() {
+    return {
+      message: {
+        text: '',
+        description: '',
+      },
+    };
+  },
+  computed: {
+    ...mapGetters({
+      textFromState: 'getText',
+      descriptionFromState: 'getDescription',
+    }),
+    getMessage() {
+      return this.message;
+    },
+  },
+  created() {
+    this.message.text = this.textFromState;
+    this.message.description = this.descriptionFromState;
   },
 };
 </script>

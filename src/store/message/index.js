@@ -3,8 +3,8 @@ const mutations = require('./mutations');
 const actions = require('./actions');
 
 const state = {
-  text: '',
-  description: '',
+  text: 'Hello World',
+  description: 'My first',
 };
 
 module.exports = {
