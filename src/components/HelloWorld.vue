@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ getMessage.text }}</h1>
-    <h1>{{ getMessage.description }}</h1>
+    <h1 class="text title">{{ getMessage.text }}</h1>
+    <h2 class="text">{{ getMessage.description }}</h2>
   </div>
 </template>
 
