@@ -1,5 +1,7 @@
 import { createStore } from 'vuex';
 
+const message = require('./message');
+
 export default createStore({
   state: {
   },
@@ -8,5 +10,6 @@ export default createStore({
   actions: {
   },
   modules: {
+    message,
   },
 });
