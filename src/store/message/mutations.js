@@ -1,7 +1,7 @@
-const setMessage = (state, message) => {
+const setMessageToState = (state, message) => {
   state.message = message;
 };
 
 export default {
-  setMessage,
+  setMessageToState,
 };

@@ -1,9 +1,5 @@
-const getText = (state) => state.message.text;
-const getDescription = (state) => state.message.description;
-const getIsLogged = (state) => state.message.isLogin;
+const getMessageFromState = (state) => state.message;
 
 export default {
-  getText,
-  getDescription,
-  getIsLogged,
+  getMessageFromState,
 };

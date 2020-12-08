@@ -22,18 +22,16 @@ export default {
   },
   computed: {
     ...mapGetters({
-      textFromState: 'getText',
-      descriptionFromState: 'getDescription',
-      logged: 'getIsLogged',
+      getMessage: 'getMessageFromState',
     }),
   },
   created() {
-    this.message.text = this.textFromState;
-    this.message.description = this.descriptionFromState;
-    this.message.isLogged = this.logged;
+    this.message.text = this.getMessage.textFromState;
+    this.message.description = this.getMessage.descriptionFromState;
+    this.message.isLogged = this.getMessage.logged;
   },
   beforeCreate() {
-    this.$store.dispatch('getMessage');
+    this.$store.dispatch('getMessageFromAPI');
   },
 };
 </script>

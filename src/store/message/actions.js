@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const URL = 'http://localhost:3080/api/test';
-const getMessage = ({ commit }) => new Promise((resolve, reject) => {
+const getMessageFromAPI = ({ commit }) => new Promise((resolve, reject) => {
   axios.get(URL)
     .then((response) => {
       const message = response.data;
@@ -15,5 +15,5 @@ const getMessage = ({ commit }) => new Promise((resolve, reject) => {
 });
 
 export default {
-  getMessage,
+  getMessageFromAPI,
 };
