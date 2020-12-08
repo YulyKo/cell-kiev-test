@@ -5,6 +5,7 @@ const actions = require('./actions');
 const state = {
   text: 'Hello World',
   description: 'My first',
+  isLogin: false,
 };
 
 module.exports = {
