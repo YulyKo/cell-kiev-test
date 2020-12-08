@@ -1,6 +1,5 @@
 import { createStore } from 'vuex';
-
-const message = require('./message');
+import message from './message/index';
 
 export default createStore({
   modules: {
