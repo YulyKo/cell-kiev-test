@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
-    <h1 class="text title">{{ getMessage.text }}</h1>
-    <h2 class="text">{{ getMessage.description }}</h2>
-    <p class="text">{{ getMessage.getLogged }}</p>
+    <h1 class="text title">{{ this.message.text }}</h1>
+    <h2 class="text">{{ this.message.description }}</h2>
+    <p class="text">{{ this.message.getLogged }}</p>
   </div>
 </template>
 
