@@ -3,12 +3,10 @@ const mutations = require('./mutations');
 const actions = require('./actions');
 
 const state = {
-  text: 'Hello World',
-  description: 'My first',
-  isLogin: false,
+  message: Object,
 };
 
-module.exports = {
+export default {
   state,
   getters,
   mutations,

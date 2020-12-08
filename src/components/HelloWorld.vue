@@ -36,7 +36,7 @@ export default {
     this.message.isLogged = this.getMessage.logged;
   },
   beforeCreate() {
-    this.store.dispatch('getMessage');
+    this.$store.dispatch('getMessage');
   },
 };
 </script>

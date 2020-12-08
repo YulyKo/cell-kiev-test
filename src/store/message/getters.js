@@ -1,8 +1,8 @@
-const getText = (state) => state.text;
-const getDescription = (state) => state.description;
-const getIsLogged = (state) => state.isLogin;
+const getText = (state) => state.message.text;
+const getDescription = (state) => state.message.description;
+const getIsLogged = (state) => state.message.isLogin;
 
-module.exports = {
+export default {
   getText,
   getDescription,
   getIsLogged,

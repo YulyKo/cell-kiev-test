@@ -1,9 +1,7 @@
-const setText = (state, text) => { state.text = text; };
-const setDescription = (state, description) => { state.description = description; };
-const setIsLogin = (state, isLogged) => { state.isLogin = isLogged; };
+const setMessage = (state, message) => {
+  state.message = message;
+};
 
-module.exports = {
-  setText,
-  setDescription,
-  setIsLogin,
+export default {
+  setMessage,
 };

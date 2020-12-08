@@ -1,13 +1,11 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:3000/api/test';
+const URL = 'http://localhost:3080/api/test';
 const getMessage = ({ commit }) => new Promise((resolve, reject) => {
   axios.get(URL)
     .then((response) => {
-      const { text, description, isLogin } = response.data;
-      commit('setText', text);
-      commit('setDescription', description);
-      commit('setIsLogged', isLogin);
+      const message = response.data;
+      commit('setMessage', message);
       resolve(response);
     })
     .catch((error) => {
@@ -16,6 +14,6 @@ const getMessage = ({ commit }) => new Promise((resolve, reject) => {
     });
 });
 
-module.exports = {
+export default {
   getMessage,
 };
