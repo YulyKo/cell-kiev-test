@@ -26,14 +26,11 @@ export default {
       descriptionFromState: 'getDescription',
       logged: 'getIsLogged',
     }),
-    getMessage() {
-      return this.message;
-    },
   },
   created() {
-    this.message.text = this.getMessage.textFromState;
-    this.message.description = this.getMessage.descriptionFromState;
-    this.message.isLogged = this.getMessage.logged;
+    this.message.text = this.textFromState;
+    this.message.description = this.descriptionFromState;
+    this.message.isLogged = this.logged;
   },
   beforeCreate() {
     this.$store.dispatch('getMessage');
